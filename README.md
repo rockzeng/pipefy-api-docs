@@ -9,11 +9,11 @@ Pipefy is in beta version and this API documentation could be deprecated at any 
 
 ## Current Version
 
-We don't actually have a versioned API, because we are on a beta version and our API could break at any time. If you cannot handle with unexpected API changes, we discourage the use of it.
+We don't actually have a versioned API, because we are on a beta version and our API could break at any time. If you cannot handle with unexpected API changes, we discourage the use of it for now.
 
 ## Schema
 
-All API access is over HTTPS, on the <tt>app.pipefy.com</tt>. All data is sent and received as JSON.
+All API access is over HTTPS, on the `https://app.pipefy.com` host. All data is sent and received as JSON.
 
 All timestamps are returned on ISO 8601 format:
 
