@@ -38,14 +38,6 @@ relationships, like users, labels and phases:
 ]
 ```
 
-To get the name of the first label of the Pipe:
-
-```javascript
-$.get('/pipes/1.json', function(data, status){
-  console.log(data.labels[0].name);
-});
-```
-
 ##### Users (members of the pipe):
 ```json
 "users": [
@@ -130,8 +122,8 @@ Here is a example of two phases, each one containing two cards each.
 To get the pipe name:
 
 ```javascript
-$.get('/pipes/1.json', function(data, status){
-  console.log(data.name);
+$.get('/pipes/1.json', function(card, status){
+  console.log(card.name);
 });
 ```
 
