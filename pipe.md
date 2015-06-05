@@ -9,7 +9,7 @@ To get the pipe name:
 
 ```
 $.get('/pipes/1.json', function(data, status){
-  alert(data.name);
+  console.log(data.name);
 });
 ```
 
@@ -18,7 +18,7 @@ This is one of the most complete server responses of pipefy. The resulting
 JSON contains data from the Pipe itself and much data from its children
 relationships:
 
-Labels:
+##### Labels:
 
 ```
 "labels": [
@@ -40,6 +40,26 @@ To get the name of the first label of the Pipe:
 
 ```
 $.get('/pipes/1.json', function(data, status){
-  alert(data.labels[0].name);
+  console.log(data.labels[0].name);
 });
+```
+
+##### Users (members of the pipe):
+```
+"users": [
+  {
+    "id": 1,
+    "name": "John Doe",
+    "username": "johndoe",
+    "email": "johndoe@mail.com",
+    "display_username": "johndoe"
+  },
+  {
+    "id": 2,
+    "name": "Jane Doe",
+    "username": "",
+    "email": "jane.doe@mail.com",
+    "display_username": "jane.doe"
+  }
+]
 ```
