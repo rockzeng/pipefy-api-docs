@@ -36,3 +36,9 @@ curl -H "X-User-Email: youremail@example.com" -H "X-User-Token: 1ap0h4n1u1hb0198
 ```bash
 curl https://app.pipefy.com/users/current.json?user_email=youremail@example.com&user_token=1ap0h4n1u1hb0198-ah01
 ```
+
+### Examples of usage
+
+Some API endpoints are documented with an example of its usage. All examples
+are javascript + Jquery source code, testable on your browser's javascript
+console if you are logged in on pipefy.
