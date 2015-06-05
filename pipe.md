@@ -1,7 +1,12 @@
 ## GET /pipes/:id.json
 
-Gets the JSON representation of the Pipe as a whole
-(including nested resources).
+Gets the JSON representation of the Pipe as a whole, including nested resources. 
+
+This is one of the most complete server responses of pipefy. The resulting
+JSON contains data from the Pipe itself and much data from its children
+relationships, like users, labels and phases:
+
+##### Main data of the pipe:
 
 ```json
 {
@@ -16,23 +21,7 @@ Gets the JSON representation of the Pipe as a whole
   "phases": [...]
 }
 ```
-
-### Example usage
-
-To get the pipe name:
-
-```javascript
-$.get('/pipes/1.json', function(data, status){
-  console.log(data.name);
-});
-```
-
-
-This is one of the most complete server responses of pipefy. The resulting
-JSON contains data from the Pipe itself and much data from its children
-relationships:
-
-##### Labels:
+##### Labels of the pipe:
 
 ```json
 "labels": [
@@ -48,7 +37,6 @@ relationships:
     }
 ]
 ```
-
 
 To get the name of the first label of the Pipe:
 
@@ -135,6 +123,16 @@ Here is a example of two phases, each one containing two cards each.
     ]
   }
 ]
+```
+
+### Example usage
+
+To get the pipe name:
+
+```javascript
+$.get('/pipes/1.json', function(data, status){
+  console.log(data.name);
+});
 ```
 
 To get the name of all the phases of a pipe:
