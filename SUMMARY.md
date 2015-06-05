@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [pipes](pipe.md)
+* [Pipes](pipe.md)
 
