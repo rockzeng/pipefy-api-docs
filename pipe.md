@@ -132,3 +132,13 @@ $.get('/pipes/1.json', function(data, status){
   })
 });
 ```
+
+To get the card titles of all cards in the first phase of a pipe:
+
+```javascript
+$.get('/pipes/1.json', function(data, status){
+  $.each(data.phases[0].cards, function(index, card){
+    console.log(card.title);  
+  })
+});
+```
