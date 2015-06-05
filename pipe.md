@@ -122,16 +122,16 @@ Here is a example of two phases, each one containing two cards each.
 To get the pipe name:
 
 ```javascript
-$.get('/pipes/1.json', function(card, status){
-  console.log(card.name);
+$.get('/pipes/1.json', function(pipe, status){
+  console.log(pipe.name);
 });
 ```
 
 To get the name of all the phases of a pipe:
 
 ```javascript
-$.get('/pipes/1.json', function(data, status){
-  $.each(data.phases, function(index, phase){
+$.get('/pipes/1.json', function(pipe, status){
+  $.each(pipe.phases, function(index, phase){
     console.log(phase.name);  
   })
 });
@@ -140,8 +140,8 @@ $.get('/pipes/1.json', function(data, status){
 To get the card titles of all cards in the first phase of a pipe:
 
 ```javascript
-$.get('/pipes/1.json', function(data, status){
-  $.each(data.phases[0].cards, function(index, card){
+$.get('/pipes/1.json', function(pipe, status){
+  $.each(pipe.phases[0].cards, function(index, card){
     console.log(card.title);  
   })
 });
