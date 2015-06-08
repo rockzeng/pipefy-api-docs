@@ -65,8 +65,9 @@ The resulting JSON contains **all** the data from the Card itself and much data 
 | next_phase | small representation of the [phase]("phase.md") the card can go next |
 | assignees | list of [users]("user.md") assigned to card |
 | labels | list of the [labels]("label.md") of the card |
-|  |  |
-|  |  |
+| current_phase_detail | the current phase of the card, including fields and values |
+| other_phase_detail | other (previous or next) phases of the card, including fields and values |
+| checklists | custom checklists created on the card |
 |  |  |
 |  |  |
 |  |  |
