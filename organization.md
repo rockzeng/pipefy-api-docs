@@ -12,3 +12,9 @@ Gets the JSON representation of a organization in pipefy. Organizations group [p
 ```
 The attributes are self explanatory.
 
+Exemples:
+
+To list all pipes of a organization:
+
+
+
