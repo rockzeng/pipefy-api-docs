@@ -27,6 +27,6 @@ The attributes are self explanatory.
 
 ##### To list all the comments of a card:
 
-
+##### To create a new comment on a card:
 
 
