@@ -25,11 +25,11 @@ The attributes are self explanatory.
 
 #### Examples:
 
-##### To list all the comments of a card:
+##### To list all the comments of the current phase of a card:
 
 ```javascript
 $.get('/cards/1.json', function(card, status){
-  $.each(card.comments, function(index, comment){
+  $.each(card.current_phase_detail.comments, function(index, comment){
     console.log(comment.text);  
   })
 });
