@@ -8,7 +8,7 @@
 * [Field Value](card_field_value.md)
 * [User](user.md)
 * [Organization](organization.md)
-* [Comment](comment.md)
+* [Comment]
   * [GET](comment.md)
   * [POST](comment.md)
 
