@@ -32,5 +32,6 @@ The remaining of the attributes are self explanatory.
 
 | attribute | details |
 | -- | -- |
-| type_id | the [field type](field_type.md) of the field (to be documented). |
 | phase_id | id of the [phase]("phase.md") the field belongs. |
+| type_id | the [field type](field_type.md) of the field (to be documented). |
+
