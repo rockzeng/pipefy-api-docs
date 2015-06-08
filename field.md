@@ -7,28 +7,27 @@ Gets the JSON representation of a [phase]("phase.md") field. Includes its fields
 ```json
 {
   "id": 1,
-  "name": "My Phase",
-  "pipe_id": 1,
-  "index": 0.0,
-  "created_at": "2015-01-01T15:42:26.974-03:00",
-  "updated_at": "2015-01-01T15:42:26.974-03:00",
-  "can_edit": true,
-  "fields": [],
-  "connected_pipes": [],
-  "jump_targets": []
+  "phase_id": 1,
+  "label": "My field",
+  "default_value": null,
+  "type_id": 1,
+  "index": 1.0,
+  "options": [],
+  "created_at": "2015-01-01T15:42:27.341-03:00",
+  "updated_at": "2015-01-01T15:42:27.341-03:00"
 }
 ```
+##### Attributes:
 
 | attribute | details |
 | -- | -- |
-| index | the position (order) where the phase is listed on the [pipe]("pipe.md"). |
+| index | the position (order) where the field is listed on the [phase]("phase.md"). |
+
+The remaining of the attributes are self explanatory.
 
 ##### Relationships:
 
 | attribute | details |
 | -- | -- |
-| pipe_id | the [pipe](pipe.md) of the phase. |
-| fields | the list of [fields]("field.md") of the phase. |
-| connected_pipes | the list of connected [pipes](pipe.md) of the phase. |
-| jump_targets | optional list of phases (other than "previous" and "next" ones) where cards on this phase can be moved to |
-
+| type_id | the [field type](field_type.md) of the field (yet to be documented). |
+| phase_id | id of the [phase]("phase.md") the field belongs. |
