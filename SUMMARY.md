@@ -10,5 +10,5 @@
 * [Organization](organization.md)
 * [Comment](comment.md)
   * [GET](comment_get.md)
-  * [POST](comment-post.md)
+  * [POST](comment_post.md)
 
