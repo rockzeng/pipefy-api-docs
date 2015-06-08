@@ -48,6 +48,7 @@ The resulting JSON contains **all** the data from the Card itself and much data 
 | -- | -- |
 | id | id of the card. |
 | title | title of the card. |
+| duration | duration (diff from `started-at` to current time) of the card in seconds |
 | current_phase_id | id of the current phase of th card. |
 | due_date | due date of the card. |
 | started at | the moment when the card left the launchpad. |
