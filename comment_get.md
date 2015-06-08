@@ -34,24 +34,3 @@ $.get('/cards/1.json', function(card, status){
   })
 });
 ```
-
-##### To create a new comment on a card:
-
-```javascript
-var commentObject = {"comment": {"text": "My awesome comment", "card_phase_detail_id": 1}};
-$.post('/comments.json', commentObject, function(data){
-  console.log(data);
-});
-```
-
-```javascript
-var commentObject = {"comment": {"text": "My awesome comment", "card_phase_detail_id": 1}};
-$.post('/comments.json', commentObject)
-  .success(function(data){
-    console.log(data.id);
-  })
-  .error(function(data){
-    console.log(data.status);
-  });
-```
-
