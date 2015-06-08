@@ -1,6 +1,8 @@
 ## GET /fields/:id.json
 
-Gets the JSON representation of a [phase]("phase.md") field. Includes its fields, jump targets (other phases where a card can be moved to) and connected cards (other cards that can be connected to the card through the phase).
+Gets the JSON representation of a [phase]("phase.md") field.
+
+This is the **structure** of a field in pipefy. The **values** of fields have their own entity: [Field Values]("field_value.md").
 
 ##### Main data of the phase:
 
