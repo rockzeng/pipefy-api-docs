@@ -1,8 +1,6 @@
 ## GET /fields/:id.json
 
-Gets the JSON representation of a [phase]("phase.md") field.
-
-This is the **structure** of a field in pipefy. The **values** of fields have their own entity: [Field Values]("field_value.md").
+Gets the JSON representation of a [card]("card.md") (technically, a [card phase detail]("card_phase_detail.md")) comment.
 
 ```json
 {
@@ -24,5 +22,11 @@ The attributes are self explanatory.
 | -- | -- |
 |card_phase_detail_id| the id of the [card phase detail]("card_phase_detail.md") which the comment was created.|
 | created_by | a representation of the [user]("user.md") who created the comment. |
+
+#### Examples:
+
+##### To list all the comments of a card:
+
+
 
 
