@@ -56,7 +56,7 @@ The resulting JSON contains **all** the data from the Card itself and much data 
 | expiration_time | the moment the card will be marked as expired. |
 | index | the index (position) of the card on the current phase.  |
 | token | unique token used for integrations. |
-| pipe | small representation of the [Pipe]("Pipes.md") of the card, including its `id` and `name`. |
+| pipe | small representation of the [Pipe]("pipe.md") of the card, including its `id` and `name`. |
 | expired | flag to mark the card as expired. |
 | late | flag to mark the card as late. |
 | draft | flag to mark if the card is a draft (still in the launchpad). |
