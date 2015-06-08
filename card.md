@@ -49,21 +49,22 @@ The resulting JSON contains **all** the data from the Card itself and much data 
 | id | id of the card. |
 | title | title of the card. |
 | duration | duration (diff from `started_at` to current time) of the card in seconds |
-| current_phase_id | id of the current phase of th card. |
+| current_phase_id | id of the current phase of the card. |
 | due_date | due date of the card. |
 | started at | the moment when the card left the launchpad. |
 | finished_at | the moment when the card was first moved to a "done phase". |
 | expiration_time | the moment the card will be marked as expired. |
 | index | the index (position) of the card on the current phase.  |
 | token | unique token used for integrations. |
-| pipe | small representation of the [Pipe]("pipe.md") of the card, including its `id` and `name`. |
+| pipe | small representation of the [pipe]("pipe.md") of the card, including its `id` and `name`. |
 | expired | flag to mark the card as expired. |
 | late | flag to mark the card as late. |
 | draft | flag to mark if the card is a draft (still in the launchpad). |
 | done | flag to mark if the card has passed to a "done phase". |
-|  |  |
-|  |  |
-|  |  |
+| previous_phase | small representation of the [phase]("phase.md") the card can return to |
+| next_phase | small representation of the [phase]("phase.md") the card can go next |
+| assignees | list of [users]("user.md") assigned to card |
+| labels | list of the [labels]("label.md") of the card |
 |  |  |
 |  |  |
 |  |  |
