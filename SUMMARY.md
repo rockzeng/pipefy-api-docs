@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
+   * [Pipe](pipe.md)
    * [Card](card.md)
-* [Pipe](pipe.md)
 
