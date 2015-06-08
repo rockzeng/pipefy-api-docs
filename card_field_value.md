@@ -15,12 +15,7 @@ Gets the JSON representation of a card [field]("field.md") value (mainly user's 
 ```
 ##### Attributes:
 
-| attribute | details |
-| -- | -- |
-| index | the position (order) where the field is listed on the [phase]("phase.md"). |
-| options | (to be documented) |
-
-The remaining of the attributes are self explanatory.
+(to be documented) |
 
 ##### Relationships:
 
