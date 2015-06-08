@@ -9,6 +9,6 @@
 * [User](user.md)
 * [Organization](organization.md)
 * [Comment](comment.md)
-  * [GET](comment.md)
-  * [POST](comment.md)
+  * [GET](comment_get.md)
+  * [POST](comment-post.md)
 
