@@ -22,6 +22,7 @@ Gets the JSON representation of a [phase]("phase.md") field. Includes its fields
 | attribute | details |
 | -- | -- |
 | index | the position (order) where the field is listed on the [phase]("phase.md"). |
+| options | (to be documented) |
 
 The remaining of the attributes are self explanatory.
 
@@ -29,5 +30,5 @@ The remaining of the attributes are self explanatory.
 
 | attribute | details |
 | -- | -- |
-| type_id | the [field type](field_type.md) of the field (yet to be documented). |
+| type_id | the [field type](field_type.md) of the field (to be documented). |
 | phase_id | id of the [phase]("phase.md") the field belongs. |
