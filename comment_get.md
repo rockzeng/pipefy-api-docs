@@ -1,4 +1,4 @@
-## GET /fields/:id.json
+## GET /comments/:id.json
 
 Gets the JSON representation of a [card]("card.md") (technically, a [card phase detail]("card_phase_detail.md")) comment.
 
