@@ -1,6 +1,6 @@
 ## PUT /cards/:id/previous_phase.json
 
-Moves the card to the next [phase](phase.md) of the [pipe](pipe.md). 
+Moves the card to the previous [phase](phase.md) of the [pipe](pipe.md). 
 
 #### Examples:
 
