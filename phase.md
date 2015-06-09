@@ -21,14 +21,14 @@ Gets the JSON representation of a pipe phase. Includes its fields, jump targets 
 
 | attribute | details |
 | -- | -- |
-| index | the position (order) where the phase is listed on the [pipe]("pipe.md"). |
+| index | the position (order) where the phase is listed on the [pipe](pipe.md). |
 
 ##### Relationships:
 
 | attribute | details |
 | -- | -- |
 | pipe_id | the [pipe](pipe.md) of the phase. |
-| fields | the list of [fields]("field.md") of the phase. |
+| fields | the list of [fields](field.md) of the phase. |
 | connected_pipes | the list of connected [pipes](pipe.md) of the phase. |
 | jump_targets | optional list of phases (other than "previous" and "next" ones) where cards on this phase can be moved to |
 
