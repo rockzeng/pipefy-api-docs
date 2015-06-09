@@ -4,8 +4,6 @@ Gets the JSON representation of a Card.
 
 The resulting JSON contains **all** the data from the Card itself and much data from its children relationships, like assignees, labels and previous/current/next phases:
 
-##### Main data of the card:
-
 ```json
 {
   "id": 1,
@@ -36,13 +34,14 @@ The resulting JSON contains **all** the data from the Card itself and much data 
     "id": 3,
     "name": "Third phase"
   },
-  "assignees": [...],
-  "labels": [...],
+  "assignees": [],
+  "labels": [],
   "current_phase_detail": {},
-  "other_phase_details": [...],
-  "checklists": [...]
+  "other_phase_details": [],
+  "checklists": []
 }
 ```
+##### Attributes:
 
 | attribute | details |
 | -- | -- |
@@ -56,22 +55,23 @@ The resulting JSON contains **all** the data from the Card itself and much data 
 | expiration_time | the moment the card will be marked as expired. |
 | index | the index (position) of the card on the current phase.  |
 | token | unique token used for integrations. |
-| pipe | small representation of the [pipe]("pipe.md") of the card, including its `id` and `name`. |
 | expired | flag to mark the card as expired. |
 | late | flag to mark the card as late. |
-| draft | flag to mark if the card is a draft (still in the launchpad). |
+| draft | flag to mark if the card is a draft (still on the launchpad). |
 | done | flag to mark if the card has passed to a "done phase". |
-| previous_phase | small representation of the [phase]("phase.md") the card can return to |
-| next_phase | small representation of the [phase]("phase.md") the card can go next |
-| assignees | list of [users]("user.md") assigned to card |
-| labels | list of the [labels]("label.md") of the card |
-| current_phase_detail | the current phase of the card, including fields and values |
-| other_phase_detail | other (previous or next) phases of the card, including fields and values |
-| checklists | custom checklists created on the card |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| checklists | custom checklists created on the card. |
+
+The remaining of the attributes are self explanatory.
+
+##### Relationships:
+
+| attribute | details |
+| -- | -- |
+| pipe | small representation of the [pipe]("pipe.md") of the card, including its `id` and `name`. |
+| previous_phase | small representation of the [phase]("phase.md") the card can return to. |
+| next_phase | small representation of the [phase]("phase.md") the card can go next. |
+| assignees | list of [users]("user.md") assigned to card. |
+| labels | list of the [labels]("label.md") of the card. |
+| current_phase_detail | the current phase details of the card, including fields and values. |
+| other_phase_detailS | list of other (previous or next) phase details of the card, including its fields and (possible) values. |
+
