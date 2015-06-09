@@ -119,4 +119,4 @@ The remaining of the attributes are self explanatory.
 | current_phase_detail | the current phase details of the card, including fields and values. |
 | other_phase_detailS | list of other (previous or next) phase details of the card, including its fields and (possible) values. |
 
-To get a list of all cards of a pipe, or of a specific phase, check the examples provided at the [pipe](pipe.md) endpoint.
+
