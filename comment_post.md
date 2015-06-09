@@ -1,6 +1,6 @@
 ## POST /comments.json
 
-Creates a nes comment. The body of the JSON document tells which card, in which phase the comment is created.
+Creates a new comment. The body of the JSON document tells which card, in which phase the comment is created.
 
 ```json
 {
