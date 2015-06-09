@@ -1,6 +1,6 @@
 ## GET /card_field_value/:id.json
 
-Gets the JSON representation of a card [field]("field.md") value (mainly user's input).
+Gets the JSON representation of a card [field](field.md) value (mainly user's input).
 
 ```json
 {
@@ -21,7 +21,7 @@ Gets the JSON representation of a card [field]("field.md") value (mainly user's 
 
 | attribute | details |
 | -- | -- |
-| field_id | id of the [field]("field.md") this card field value belongs to. |
+| field_id | id of the [field](field.md) this card field value belongs to. |
 | card | a small representation of the [card](card.md) of the field value (included for convenience). |
 
 #### Examples:
