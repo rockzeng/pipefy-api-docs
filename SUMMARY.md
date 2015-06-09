@@ -4,7 +4,7 @@
 * [User](user.md)
 * [Organization](organization.md)
 * [Pipe](pipe.md)
-   * [create_card](pipe_create_card.md)
+   * [POST create_card](pipe_create_card.md)
 * [Card](card.md)
    * [GET](card_get.md)
    * [POST](card_post.md)
