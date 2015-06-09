@@ -2,7 +2,7 @@
 
 Gets the JSON representation of a [phase](phase.md) field.
 
-This is the **structure** of a field in pipefy. The **values** of fields have their own entity: [Field Values](field_value.md).
+This is the **structure** of a field in pipefy. The **values** of fields have their own entity: [field values](field_value.md).
 
 ##### Main data of the phase:
 
