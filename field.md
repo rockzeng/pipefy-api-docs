@@ -1,8 +1,8 @@
 ## GET /fields/:id.json
 
-Gets the JSON representation of a [phase]("phase.md") field.
+Gets the JSON representation of a [phase](phase.md) field.
 
-This is the **structure** of a field in pipefy. The **values** of fields have their own entity: [Field Values]("field_value.md").
+This is the **structure** of a field in pipefy. The **values** of fields have their own entity: [Field Values](field_value.md).
 
 ##### Main data of the phase:
 
@@ -23,7 +23,7 @@ This is the **structure** of a field in pipefy. The **values** of fields have th
 
 | attribute | details |
 | -- | -- |
-| index | the position (order) where the field is listed on the [phase]("phase.md"). |
+| index | the position (order) where the field is listed on the [phase](phase.md). |
 | options | (to be documented) |
 
 The remaining of the attributes are self explanatory.
@@ -32,6 +32,6 @@ The remaining of the attributes are self explanatory.
 
 | attribute | details |
 | -- | -- |
-| phase_id | id of the [phase]("phase.md") the field belongs. |
+| phase_id | id of the [phase](phase.md) the field belongs. |
 | type_id | the [field type](field_type.md) of the field (to be documented). |
 
