@@ -13,7 +13,7 @@ The currently authenticated user will be automatically set as the card creator.
 
 #### Examples:
 
-##### To create a new comment on a card:
+##### To create a new card on the first non draft phase of a pipe:
 
 ```javascript
 var cardObject = {"card": {"title": "My new card"}};
