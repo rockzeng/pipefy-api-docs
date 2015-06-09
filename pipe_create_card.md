@@ -4,9 +4,8 @@ Creates a new card on the first non draft phase of a [pipe](pipe.md).
 
 ```json
 {
-  "comment": {
-    "text": "My awesome comment", 
-    "card_phase_detail_id": 1
+  "card": {
+    "title": "My new card"
   }
 }
 ```
@@ -17,8 +16,8 @@ The currently authenticated user will be automatically set as the card creator.
 ##### To create a new comment on a card:
 
 ```javascript
-var commentObject = {"comment": {"text": "My awesome comment", "card_phase_detail_id": 1}};
-$.post('/comments.json', commentObject, function(data){
+var cardObject = {"card": {"title": "My new card"}};
+$.post('/pipes/2/create_card.json', cardObject, function(data){
   console.log(data);
 });
 ```
