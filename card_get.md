@@ -67,11 +67,11 @@ The remaining of the attributes are self explanatory.
 
 | attribute | details |
 | -- | -- |
-| pipe | small representation of the [pipe]("pipe.md") of the card, including its `id` and `name`. |
-| previous_phase | small representation of the [phase]("phase.md") the card can return to. |
-| next_phase | small representation of the [phase]("phase.md") the card can go next. |
-| assignees | list of [users]("user.md") assigned to card. |
-| labels | list of the [labels]("label.md") of the card. |
+| pipe | small representation of the [pipe](pipe.md) of the card, including its `id` and `name`. |
+| previous_phase | small representation of the [phase](phase.md) the card can return to. |
+| next_phase | small representation of the [phase](phase.md) the card can go next. |
+| assignees | list of [users](user.md) assigned to card. |
+| labels | list of the [labels](label.md) of the card. |
 | current_phase_detail | the current phase details of the card, including fields and values. |
 | other_phase_detailS | list of other (previous or next) phase details of the card, including its fields and (possible) values. |
 
