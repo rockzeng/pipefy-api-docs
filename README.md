@@ -39,6 +39,6 @@ curl https://app.pipefy.com/users/current.json?user_email=youremail@example.com&
 
 ### Examples of usage
 
-Some API endpoints are documented with an example of its usage. All examples
+Most API endpoints are documented with an example of its usage. All examples
 are javascript + Jquery source code, testable on your browser's javascript
 console if you are logged in on pipefy.
