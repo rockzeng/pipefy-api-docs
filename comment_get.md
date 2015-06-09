@@ -1,6 +1,6 @@
 ## GET /comments/:id.json
 
-Gets the JSON representation of a [card]("card.md") (technically, a [card phase detail]("card_phase_detail.md")) comment.
+Gets the JSON representation of a [card](card.md) (technically, a [card phase detail](card_phase_detail.md)) comment.
 
 ```json
 {
@@ -20,8 +20,8 @@ The attributes are self explanatory.
 
 | attribute | details |
 | -- | -- |
-|card_phase_detail_id| the id of the [card phase detail]("card_phase_detail.md") which the comment was created.|
-| created_by | a representation of the [user]("user.md") who created the comment. |
+|card_phase_detail_id| the id of the [card phase detail](card_phase_detail.md) which the comment was created.|
+| created_by | a representation of the [user](user.md) who created the comment. |
 
 #### Examples:
 
