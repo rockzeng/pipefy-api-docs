@@ -15,7 +15,7 @@ Gets the JSON representation of a card [field]("field.md") value (mainly user's 
 ```
 ##### Attributes:
 
-(to be documented) |
+(to be documented)
 
 ##### Relationships:
 
