@@ -21,16 +21,3 @@ $.post('/pipes/2/create_card.json', cardObject, function(data){
   console.log(data);
 });
 ```
-
-The same operation, treating error responses:
-
-```javascript
-var commentObject = {"comment": {"text": "My awesome comment", "card_phase_detail_id": 1}};
-$.post('/comments.json', commentObject)
-  .success(function(data){
-    console.log(data.id);
-  })
-  .error(function(data){
-    console.log(data.status);
-  });
-```
