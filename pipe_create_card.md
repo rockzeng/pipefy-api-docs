@@ -17,7 +17,7 @@ The currently authenticated user will be automatically set as the card creator.
 
 ```javascript
 var cardObject = {"card": {"title": "My new card"}};
-$.post('/pipes/2/create_card.json', cardObject, function(data){
+$.post('/pipes/1/create_card.json', cardObject, function(data){
   console.log(data);
 });
 ```
