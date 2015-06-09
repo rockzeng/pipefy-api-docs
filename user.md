@@ -1,6 +1,6 @@
 ## GET /users/:id.json
 
-Gets the JSON representation of a [user]("user.md") of pipefy.
+Gets the JSON representation of a user of pipefy.
 
 ```json
 {
