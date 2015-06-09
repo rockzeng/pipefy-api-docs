@@ -8,6 +8,8 @@
 * [Card](card.md)
    * [GET](card_get.md)
    * [POST](card_post.md)
+   * [POST](card_previous_phase.md)
+   * [POST](card_next_phase.md)
 * [Phase](phase.md)
 * [Field](field.md)
 * [Field Value](card_field_value.md)
