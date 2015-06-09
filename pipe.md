@@ -4,7 +4,7 @@ Gets the JSON representation of the Pipe as a whole, including nested resources.
 
 This is one of the most complete server responses of pipefy. The resulting
 JSON contains data from the Pipe itself and much data from its children
-relationships, like [users]("user.md"), [labels]("label.md") and [phases]("phase.md"):
+relationships, like [users](user.md), [labels](label.md) and [phases](phase.md):
 
 ##### Main data of the pipe:
 
