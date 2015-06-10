@@ -7,10 +7,14 @@ Gets the JSON representation of a organization in pipefy. Organizations group [p
   "id": 1,
   "name": "My Organization",
   "created_at": "2015-01-01T15:54:07.946-03:00",
-  "updated_at": "2015-01-01T17:18:21.224-03:00"
+  "updated_at": "2015-01-01T17:18:21.224-03:00",
+  "pipes": []
 }
 ```
-The attributes are self explanatory.
+
+##### Relationships:
+
+The other attributes are self explanatory.
 
 
 
