@@ -23,7 +23,7 @@ Gets the JSON representation of a organization in pipefy. Organizations group [p
 
 | attribute | details |
 | -- | -- |
-| pipes | a list of the organization pipes. only the pipe `id`'s are listed
+| pipes | a list of the organization [pipes](pipe.md). only the pipe `id`'s are listed
 ```
 
 The other attributes are self explanatory.
