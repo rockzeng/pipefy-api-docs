@@ -14,6 +14,11 @@ Gets the JSON representation of a organization in pipefy. Organizations group [p
 
 ##### Relationships:
 
+| attribute | details |
+| -- | -- |
+| pipes | a list of the organization pipes. only the pipe `id`'s are listed
+```
+
 The other attributes are self explanatory.
 
 
