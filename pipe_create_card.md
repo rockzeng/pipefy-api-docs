@@ -54,7 +54,7 @@ $.get('/pipes/' + pipeId + '.json', function(pipe, status){
       if (fieldId === 1) return {field_id: fieldId, value: 'value for first field'};
       if (fieldId === 2) return {field_id: fieldId, value: 'value for second field'};
     });
-    // finally, create a new card with some fiel values
+    // finally, create a new card with some field values
     var cardObject = {"card": {"title": "My new card", field_values: fieldValuesArray}};
     $.post('/pipes/' + pipeId + '/create_card.json', cardObject, function(data){
       console.log(data);
