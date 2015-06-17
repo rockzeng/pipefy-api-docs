@@ -28,9 +28,10 @@ $.post('/pipes/1/create_card.json', cardObject, function(data){
 2. Set the field values for each field;
 
 ```javascript
+var pipeId = 1;
 var firstPhase, fieldIds;
 // get pipe details, phases details included
-$.get('/pipes/2.json', function(pipe, status){
+$.get('/pipes/' + pipeId + '.json', function(pipe, status){
   // get the first phase of the pipe
   firstPhase = pipe.phases[0];
 })
@@ -44,8 +45,16 @@ $.get('/pipes/2.json', function(pipe, status){
     });
   })
   .success(function(data){
-    // make the field values object
-    console.log(fieldIds);
+    // make a list of field value objects:
+    fieldValuesArray = $.map(fieldIds, function(fieldId){
+      if (fieldId === 12) return {field_id: fieldId, value: 'value for first field'};
+      if (fieldId === 13) return {field_id: fieldId, value: 'value for second field'};
+    });
+    // finally, create a new card with some fiel values
+    var cardObject = {"card": {"title": "My new card", field_values: fieldValuesArray}};
+    $.post('/pipes/' + pipeId + '/create_card.json', cardObject, function(data){
+      console.log(data);
+    });
   });
 });
 ```
