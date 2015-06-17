@@ -26,3 +26,16 @@ $.post('/pipes/1/create_card.json', cardObject, function(data){
 
 1. Get the field `id`s of the phase. The phase can be the first, draft phase.;
 2. Set the field values for each field;
+
+```javascript
+var firstPhase;
+// get pipe details, phases details included
+$.get('/pipes/2.json', function(pipe, status){
+  // get the first phase of the pipe
+  firstPhase = pipe.phases[0];
+})
+.success(function(data){
+  // get the fields of the first phase of the pipe
+  console.log(firstPhase.id)
+});
+```
