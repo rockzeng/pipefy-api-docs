@@ -24,4 +24,5 @@ $.post('/pipes/1/create_card.json', cardObject, function(data){
 
 ##### To create a new card on the first non draft phase of a pipe, setting more field values:
 
-(to be documented)
+1. Get the field `id`s of the phase. The phase can be the first, draft phase.;
+2. Set the field values for each field;
