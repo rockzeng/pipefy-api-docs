@@ -50,7 +50,7 @@ $.get('/pipes/' + pipeId + '.json', function(pipe, status){
   })
   .success(function(data){
     // make a list of field value objects:
-    fieldValuesArray = $.map(fieldIds, function(fieldId){
+    var fieldValuesArray = $.map(fieldIds, function(fieldId){
       if (fieldId === 1) return {field_id: fieldId, value: 'value for first field'};
       if (fieldId === 2) return {field_id: fieldId, value: 'value for second field'};
     });
