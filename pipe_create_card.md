@@ -28,7 +28,7 @@ $.post('/pipes/1/create_card.json', cardObject, function(data){
 2. Set the field values for each field;
 
 ```javascript
-var firstPhase;
+var firstPhase, fieldIds;
 // get pipe details, phases details included
 $.get('/pipes/2.json', function(pipe, status){
   // get the first phase of the pipe
@@ -36,6 +36,16 @@ $.get('/pipes/2.json', function(pipe, status){
 })
 .success(function(data){
   // get the fields of the first phase of the pipe
-  console.log(firstPhase.id)
+  $.get('/phases/' + firstPhase.id + '.json', function(phase, status){
+    // get the field ids
+    fields = phase.fields;
+    fieldIds = $.map(fields, function(field){
+      return field.id;
+    });
+  })
+  .success(function(data){
+    // make the field values object
+    console.log(fieldIds);
+  });
 });
 ```
