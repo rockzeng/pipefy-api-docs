@@ -8,7 +8,7 @@ Moves the card to the previous [phase](phase.md) of the [pipe](pipe.md).
 var ajaxParameters = {
   url: '/cards/1/previous_phase.json',
   type: 'PUT'
-}
+};
 $.ajax(ajaxParameters)
 .done(function(data){
   console.log(data);
