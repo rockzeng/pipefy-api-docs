@@ -47,8 +47,8 @@ $.get('/pipes/' + pipeId + '.json', function(pipe, status){
   .success(function(data){
     // make a list of field value objects:
     fieldValuesArray = $.map(fieldIds, function(fieldId){
-      if (fieldId === 12) return {field_id: fieldId, value: 'value for first field'};
-      if (fieldId === 13) return {field_id: fieldId, value: 'value for second field'};
+      if (fieldId === 1) return {field_id: fieldId, value: 'value for first field'};
+      if (fieldId === 2) return {field_id: fieldId, value: 'value for second field'};
     });
     // finally, create a new card with some fiel values
     var cardObject = {"card": {"title": "My new card", field_values: fieldValuesArray}};
