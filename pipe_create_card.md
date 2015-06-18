@@ -26,14 +26,38 @@ $.post('/pipes/1/create_card.json', cardObject, function(data){
 
 In order to create a new card setting values for fields, you must remember:
 
-1. The card is **created** on the first, **draft** phase of the pipe, then automatically **moved** to the next **non draft** phase. So, the fields getting values set are **from the first, draft** phase;
-2. You need to specify which fields are getting values set, by their ids. If you're starting knowing only the pipe id, you need to get the first phase id from the list of the pipe phases. With the phase id you can get all the field ids of the phase.
+The card is **created** on the first, **draft** phase of the pipe, then automatically **moved** to the next **non draft** phase. So, the fields getting values set are **from the first, draft** phase.
 
-Here is a full example:
+You need to specify which fields are getting values set, by their ids. If you're starting knowing only the pipe id, you need to:
+  1. Get the first [phase](phase.md) id from the list of the pipe phases;
+  2. With the phase id you neet to get all the [field](field_.md) ids of that phase;
+  3. Finally, you send the [field values](field_value.md) (only `field_id` and `value` are needed) associated to field ids.
 
 ```javascript
 var pipeId = 1;
 var firstPhase, fieldIds;
+
+var fieldValues = [
+  { "field_id": 1, "value": "value for first field (which also can be used as the card title)" },
+  { "field_id": 2, "value": "value for second field" },
+  { "field_id": 3, "value": ["value for a radio (yes/no) field"] },
+  { "field_id": 4, "value": ["multiple values", "for a ", "checklist field"] }
+];
+
+var cardObject = {
+  "card": {
+    "field_values": fieldValues
+  }
+};
+
+$.post('/pipes/' + pipeId + '/create_card.json', cardObject, function(data){
+  console.log(data);
+});
+```
+
+Here is a full example, doing it all at once:
+
+```javascript
 
 // get pipe details, phases details included
 $.get('/pipes/' + pipeId + '.json', function(pipe, status){
