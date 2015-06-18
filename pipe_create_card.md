@@ -34,6 +34,7 @@ Here is a full example:
 ```javascript
 var pipeId = 1;
 var firstPhase, fieldIds;
+
 // get pipe details, phases details included
 $.get('/pipes/' + pipeId + '.json', function(pipe, status){
   // get the first phase of the pipe
