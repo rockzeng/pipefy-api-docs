@@ -87,3 +87,5 @@ $.get('/pipes/' + pipeId + '.json', function(pipe, status){
   });
 });
 ```
+
+To update field values of a existing card, please refer to [field values](field_value.bd) examples.
